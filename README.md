@@ -1,8 +1,8 @@
 # Our Awesome Project
 This project is a Christmas themed shopping list with a built-in Christmas countdown and Christmas music player! This application helps you keep track of what you need to buy for friends and family for Christmas.
 
-![alt tag](https://imgur.com/a/uChrqy8)
-![alt tag](https://imgur.com/a/vPdFtDS)
+![alt tag](https://i.imgur.com/mINXdcw.jpg)
+![alt tag](https://i.imgur.com/Dgut7ov.jpg)
 
 
 ## How It's Made:
