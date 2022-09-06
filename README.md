@@ -1,7 +1,9 @@
 # Our Awesome Project
 This project is a Christmas themed shopping list with a built-in Christmas countdown and Christmas music player! This application helps you keep track of what you need to buy for friends and family for Christmas.
 
-<!-- add screenshot of page -->
+![alt tag](https://i.imgur.com/mINXdcw.jpg)
+![alt tag](https://i.imgur.com/Dgut7ov.jpg)
+
 
 ## How It's Made:
 
@@ -11,9 +13,5 @@ This is a simple ToDo App remade into a lovely Christmas shopping list. Built us
 
 ## Optimizations
 
-Some features to add can include adding more features to list organization (i.e. a list for multiple gifts to the same person) and shareable private lists for users without an account to see.
-
-## Lessons Learned:
-
-placeholder
+Some features to add can include adding more features to list organization (i.e. a list for multiple gifts to the same person),  shareable private lists for users without an account to see.
 
