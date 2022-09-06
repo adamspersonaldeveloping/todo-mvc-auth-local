@@ -33,9 +33,13 @@ exports.postPasswordRecover = async (req, res) =>{
             });
         },
         function (token, done) {
-            User.findOne({ email: req.body.email }, function (err, user) {
+            User.findOne({ email: req.body.email }, function (err, user) {   
+            const errors = []
                 if (!user) {
-                    req.flash('errors', 'No account with that email address exists.');
+                    errors.push({ msg:"No account with that email address exists."})
+                }
+                if(errors.length){
+                    req.flash('errors', errors);
                     return res.redirect('/recover');
                 }
 
@@ -65,13 +69,13 @@ exports.postPasswordRecover = async (req, res) =>{
                     'If you did not request this, please ignore this email and your password will remain unchanged.\n'
             };
             transporter.sendMail(mailOptions, function (err) {
-                req.flash('errors', 'An e-mail has been sent to ' + user.email + ' with further instructions.');
+                req.flash('info', 'An e-mail has been sent to ' + user.email + ' with further instructions.');
                 done(err, 'done');
             });
         }
     ], function (err) {
         if (err) return next(err);
-        res.redirect('/recover');
+        res.redirect('/login');
     })
 }
 
@@ -91,14 +95,14 @@ exports.postPasswordReset = async(req,res) =>{
         if (req.body.password !== req.body.confirmPassword) validationErrors.push({ msg: 'Passwords do not match' })
 
         if (validationErrors.length) {
-            req.flash('errors', validationErrors)
+            req.flash('info', validationErrors)
         
         }
     async.waterfall([
         function (done) {
             User.findOne({ resetPasswordToken: req.params.token, resetPasswordExpires: { $gt: Date.now() } }, function (err, user) {
                 if (!user) {
-                    req.flash('error', 'Password reset token is invalid or has expired.');
+                    req.flash('info', 'Password reset token is invalid or has expired.');
                     return res.redirect('back');
                 }
 
