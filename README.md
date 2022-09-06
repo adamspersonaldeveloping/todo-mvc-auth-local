@@ -1,4 +1,4 @@
-# Our Awesome Project
+# Christmas List Management App
 This project is a Christmas themed shopping list with a built-in Christmas countdown and Christmas music player! This application helps you keep track of what you need to buy for friends and family for Christmas.
 
 ![alt tag](https://i.imgur.com/mINXdcw.jpg)
@@ -15,13 +15,16 @@ We also implemented a password reset feature, where the user can request an emai
 
 ## Optimizations
 
-Some features to add can include adding more features to list organization (i.e. if name is included, prompting the user to add multiple gifts to the same person), shareable private lists for users without an account to see, wishlists for the logged-in user to share. 
+Some features to add can include:
+-  adding more features to list organization (i.e. if name is included, prompting the user to add multiple gifts to the same person), 
+- shareable private lists for users without an account to see, 
+- wishlists for the logged-in user to share. 
 
 ## Contributors
 
-Cheri#6412
-emlegweak#4361
-ladynazlia#5716
-ZRT#1448
-S_Katana#1955
-adamspersonald#3432
+ - Cheri#6412 - [Priscilla De Los Santos](https://github.com/pndelossantos)
+ - emlegweak#4361 - [Emily Armstrong](https://github.com/emlegweak)
+ - ladynazlia#5716 - [Amanda Faulkenberry](https://github.com/LadyNazlia)
+ - ZRT#1448 - [Ryan Warren](https://github.com/ZRTAssassin)
+ - S_Katana#1955 - [Steven Ong](https://github.com/ong-stev)
+ - adamspersonald#3432 - [Adam (Stein Beals)](https://github.com/adamspersonaldeveloping)
