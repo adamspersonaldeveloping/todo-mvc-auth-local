@@ -4,7 +4,7 @@
   "description": "A simple Christmas list that can help bring joy to the family during december, disregarding the idea that 3 strangers showed up with gifts...",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
